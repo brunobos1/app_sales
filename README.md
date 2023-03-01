@@ -65,16 +65,44 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- USAGE EXAMPLES -->
-## Usage
+### Optional
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+To use the API's CRUD routes, it is necessary to configure the Database, the application will work without it but only the GET method.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+1. Configure then .env file with BD acess informations
+
+2. Do the Migrations
+    ```sh
+    php artisan migrate
+    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTACT -->
+## Usage
+
+The main page will only have the graph and the table, with the data merged from the page https://www.mcoutinhopecas.pt/ with whatever you want to insert in the database.
+
+    ```sh
+    php artisan migrate
+    ```
+
+With the command above you can take a look at the API routes and the methods to use them, the POST and PUT/PATCH methods, they need to contain a json in their body with the information year and value.
+
+    ```sh
+    {
+        "year": "2023",
+        "value": "10000000"
+    }
+    ```
+
+To use the show, update and destroy methods you need to pass the year you want to query, the years extracted from mcoutinhopecas.pt are not available for consultation by these 3 methods.
+
+    ```sh
+    localhost:8000/api/production/2023
+    ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Contact
 
 Bruno Oliveira - [@Linkedin](https://www.linkedin.com/in/bruno-oliveira-4a6bb8169/) - brunobos21@gmail.com
@@ -83,8 +111,6 @@ Project Link: [Github](https://github.com/brunobos1/app_sales)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 [contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
