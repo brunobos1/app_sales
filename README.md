@@ -69,7 +69,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 To use the API's CRUD routes, it is necessary to configure the Database, the application will work without it but only the GET method.
 
-1. Configure then .env file with BD acess informations
+1. Configure then .env file with BD acess informations, You can use the .env.example as a base
 
 2. Do the Migrations
     ```sh
