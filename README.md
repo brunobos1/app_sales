@@ -81,25 +81,22 @@ To use the API's CRUD routes, it is necessary to configure the Database, the app
 ## Usage
 
 The main page will only have the graph and the table, with the data merged from the page https://www.mcoutinhopecas.pt/ with whatever you want to insert in the database.
-
-    ```sh
-    php artisan migrate
-    ```
+```sh
+php artisan route:list
+```
 
 With the command above you can take a look at the API routes and the methods to use them, the POST and PUT/PATCH methods, they need to contain a json in their body with the information year and value.
-
-    ```sh
-    {
-        "year": "2023",
-        "value": "10000000"
-    }
-    ```
+```sh
+{
+    "year": "2023",
+    "value": "10000000"
+}
+```
 
 To use the show, update and destroy methods you need to pass the year you want to query, the years extracted from mcoutinhopecas.pt are not available for consultation by these 3 methods.
-
-    ```sh
-    localhost:8000/api/production/2023
-    ```
+```sh
+localhost:8000/api/production/2023
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
