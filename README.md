@@ -69,7 +69,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 To use the API's CRUD routes, it is necessary to configure the Database, the application will work without it but only the GET method.
 
-1. Configure then .env file with BD acess informations
+1. Configure then .env file with BD acess informations, You can use the .env.example as a base
 
 2. Do the Migrations
     ```sh
@@ -85,7 +85,9 @@ The main page will only have the graph and the table, with the data merged from 
 php artisan route:list
 ```
 
-With the command above you can take a look at the API routes and the methods to use them, the POST and PUT/PATCH methods, they need to contain a json in their body with the information year and value.
+With the command above you can take a look at the API routes and the methods to use them.
+
+The POST and PUT/PATCH methods need to contain a json in their body with the information year and value.
 ```sh
 {
     "year": "2023",
