@@ -85,7 +85,9 @@ The main page will only have the graph and the table, with the data merged from 
 php artisan route:list
 ```
 
-With the command above you can take a look at the API routes and the methods to use them, the POST and PUT/PATCH methods, they need to contain a json in their body with the information year and value.
+With the command above you can take a look at the API routes and the methods to use them.
+
+The POST and PUT/PATCH methods need to contain a json in their body with the information year and value.
 ```sh
 {
     "year": "2023",
