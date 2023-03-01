@@ -15,9 +15,14 @@ public/hot
 public_html/storage
 public_html/hot
 
+docker-compose.yml
+docker-compose.override.yml
 storage/*.key
 .env
+.env.backup
 Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
+/.idea
+/.vscode
